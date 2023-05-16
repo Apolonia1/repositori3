@@ -18,16 +18,14 @@ public class Exercici1git3 {
         Scanner sc = new Scanner (System.in);
         int nombre = sc.nextInt();
        
-        if (nombre>10 && nombre<1){
+        if (nombre>10 || nombre<1){
             System.out.println("El nombre no es troba entre 1 i 10. Introduir un altre nombre");
             nombre = sc.nextInt();
         }
         System.out.println("La taula de multiplicar de"+ nombre);
         for (int mult = 1; mult <=10; mult++){
             int res = nombre*mult;
-            System.out.println(+nombre);
-            System.out.println("*"+mult);
-            System.out.println("="+res);
+            System.out.println(nombre+"*"+mult +"="+res);
         }
     }
 }
